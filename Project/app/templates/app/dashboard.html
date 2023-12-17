@@ -1,0 +1,5 @@
+<h2>Dashboard</h2>
+
+{% if request.user.is_authenticated %}
+    <a href="{% url 'account_logout' %}">Logout of Account</a>
+{%endif%}
